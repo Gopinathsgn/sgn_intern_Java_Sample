@@ -17,7 +17,7 @@ class Ideone
 		else
 		replace with ASCII + charoffset
 		 (if A -> C)
-		 
+		Skip if ITS a SYMBOL 
 		
 		*/
 		
