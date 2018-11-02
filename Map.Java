@@ -9,6 +9,18 @@ class Ideone
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
+		
+		/*
+		if map have key the replace input with map value
+		else
+		if num multiply with charoffset
+		else
+		replace with ASCII + charoffset
+		 (if A -> C)
+		 
+		
+		*/
+		
 	HashMap<String,String> wordMap=new HashMap<>();
 	String input="Gopi";
 	StringBuffer str=new StringBuffer();
@@ -34,8 +46,14 @@ class Ideone
             //NOT A Valid Num
             
             for(int i=0;i<input.length();i++){
-            	int a=(int)input.charAt(i)+charoffset;
-        	str.append((char)a);
+		    
+		    if(input.charAt(i)>33 && input.charAt(i)<44){
+		    //Skips if Its a Special cahr
+		    countinue;
+		    }
+		   
+            	   int a=(int)input.charAt(i)+charoffset;
+        	   str.append((char)a);
             }
             
         } 
