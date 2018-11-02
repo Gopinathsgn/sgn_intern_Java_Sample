@@ -56,6 +56,7 @@ class Ideone
 		    }
 		   
             	   int a=(int)input.charAt(i)+charoffset;
+		    //For Type Casting
         	   str.append((char)a);
             }
             
