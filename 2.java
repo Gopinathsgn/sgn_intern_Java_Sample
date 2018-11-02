@@ -24,3 +24,19 @@ interface RainfallCalculator {
   */
   Float getAverageRainfall(Date fromDate, Date fromDate);
 }
+
+class RainfallRegion implements RainfallCalculator{
+	HashMap<String,Date> dateofRain=new HashMap<>();
+  HashMap<String,Float> measureofRain=new HashMap<>();
+  //For Pincode and rain date (Converted as String if needed)
+  HashMap<Date,String> date=new HashMap<>();
+   //For Pincode and measure 
+  
+   void captureRain(Float measure,Date rainDate, String pincode){
+     dateofRain.put(pincode,rainDate);
+     measureofRain.put(pincode,measure);
+    
+   }
+  
+  
+}
