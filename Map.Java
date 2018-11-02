@@ -23,10 +23,13 @@ class Ideone
 		
 	HashMap<String,String> wordMap=new HashMap<>();
 	String input="Gopi";
+		//Sample Input
 	StringBuffer str=new StringBuffer();
+		//For Mutable String
 	int charoffset=2;
 	wordMap.put("Gopi","sgn");
 	wordMap.put("Gopinath","sgn");
+		//Sample Values in Map
 	if(wordMap.containsKey(input)){
 		
 		//Replace if Found
