@@ -1,5 +1,3 @@
-/* package whatever; // don't place package name! */
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -52,7 +50,7 @@ class Ideone
 		    
 		    if(input.charAt(i)>33 && input.charAt(i)<44){
 		    //Skips if Its a Special cahr
-		    countinue;
+		    continue;
 		    }
 		   
             	   int a=(int)input.charAt(i)+charoffset;
